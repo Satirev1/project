@@ -1,0 +1,1359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageVie1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_margin="10dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:saveEnabled="false"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:textSize="35dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="총 203개"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/border"
+             />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="월별 등급별 통계"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/border"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="월별"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="등록업체수"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="VIP"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="프리미엄"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="일반"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="수수료"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:background="@drawable/border"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView53"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView54"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView56"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView58"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView59"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView60"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView62"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView65"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView67"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView68"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView69"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView70"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView72"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView73"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView74"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView75"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView76"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView77"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView78"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView79"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView80"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView81"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView82"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView83"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView84"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView85"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView86"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView87"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView88"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView89"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView90"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView91"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView92"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView93"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView94"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView95"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView96"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView97"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView98"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView99"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView100"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView101"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView102"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView103"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/textView104"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="center_horizontal"
+                    android:text="수수료"
+                    android:textColor="#000000"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Button" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- array의 이름은 location 입니다.-->
+
+    <string-array name="sort">
+        <item>월별 등급 통계</item>
+        <item>월별 통계</item>
+        <item>업체별 기간 판매액 통계</item>
+        <item>기간별 총액 통계</item>
+        <item>업체별 총액 통계</item>
+        <item>월 등급별 통계</item>
+    </string-array>
+
+</resources>
+
+
+
+
+
+
